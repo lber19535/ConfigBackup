@@ -1,0 +1,11 @@
+[user]
+	name = lber119535
+	email = lber19535@126.com
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[alias]
+	st = status
+	sts = status -s
+	lg = log --oneline --decorate --all --graph
