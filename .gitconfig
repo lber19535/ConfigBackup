@@ -1,10 +1,13 @@
 [user]
-	name = lber119535
+	name = bill_lv
 	email = lber19535@126.com
 [color]
 	ui = true
 [core]
 	autocrlf = input
+	editor = vim
+[diff]
+	external = /bin/git-meld.sh
 [alias]
 	st = status
 	sts = status -s
