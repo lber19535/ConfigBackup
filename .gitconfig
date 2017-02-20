@@ -6,9 +6,16 @@
 [core]
 	autocrlf = input
 	editor = vim
+	filemode = false
 [diff]
-	external = /bin/git-meld.sh
+	external = /bin/git-meld.sh  # diff tool path
+[commit]
+        template = /home/bill/git-template  # commit template
 [alias]
 	st = status
 	sts = status -s
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lp = log -p # check single file history
+	co = checkout
+	ci = commit
+        br = branch
