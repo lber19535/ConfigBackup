@@ -12,15 +12,20 @@
 [commit]
         template = /home/bill/git-template  # commit template
 [alias]
-	st = status
-	sts = status -s
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lp = log -p # check single file history
-	co = checkout
-	ci = commit
-	br = branch
-	puc = push -u origin HEAD
-	cob = checkout -b
-	brd = branch -d
-	brD = branch -D
-	master = !git checkout master && git pull origin 
+    cd = checkout develop
+    rh = reset --hard
+    st = status
+    cp = cherry-pick
+    sts = status -s
+    lp = log -p
+    co = checkout
+    ci = commit
+    br = branch
+    cob = checkout -b
+    brd = branch -d
+    brD = branch -D
+    puc = push -u origin HEAD
+    sth = stash
+    sthp = stash pop
+    pr = pull --rebase
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
